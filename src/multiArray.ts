@@ -8,6 +8,12 @@
  * 輸出: [[2, 4], [6, 8], [10, 12]]
  */
 
-export function processMultiArray(arr) {
-    // 在此實現函式
+export function processMultiArray(arr: [][]) {
+    const sumArr = arr.map(subArr => {
+        const subArrSum = subArr.map(num => {
+            return num*2;
+        })
+        return subArrSum;
+    })
+    return sumArr;
 }

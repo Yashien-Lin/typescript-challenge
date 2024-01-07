@@ -4,7 +4,7 @@
  * @param b - 第二個數字
  */
 export function add(a: number, b: number): number {
-    // 在此實現函式
+    return a + b;
 }
 
 /**
@@ -13,7 +13,7 @@ export function add(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function subtract(a: number, b: number): number {
-    // 在此實現函式
+    return a - b;
 }
 
 /**
@@ -22,7 +22,7 @@ export function subtract(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function multiply(a: number, b: number): number {
-    // 在此實現函式
+    return a * b;
 }
 
 /**
@@ -30,8 +30,17 @@ export function multiply(a: number, b: number): number {
  * @param a - 第一個數字
  * @param b - 第二個數字
  */
-export function divide(a: number, b: number): number {
-    // 在此實現函式
+export function divide(a: number, b: number) {
+    // if ( b === 0){ 
+    //     return "Cannot divide by zero";
+    // } else {
+    //     return a / b;
+    // }
+    if ( b != 0){ 
+        return a / b;
+    } else {
+        throw "Cannot divide by zero";
+    }
 }
 
 /**
@@ -44,4 +53,4 @@ export function divide(a: number, b: number): number {
 export function add100(a: number, b: number): number {
     const sum = a + b;
     return sum > 100 ? 100 : sum;
-  }
+}
