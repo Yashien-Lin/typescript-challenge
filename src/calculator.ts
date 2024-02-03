@@ -31,12 +31,7 @@ export function multiply(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function divide(a: number, b: number) {
-    // if ( b === 0){ 
-    //     return "Cannot divide by zero";
-    // } else {
-    //     return a / b;
-    // }
-    if ( b != 0){ 
+    if ( b !== 0){ 
         return a / b;
     } else {
         throw "Cannot divide by zero";

@@ -19,5 +19,9 @@ interface UrlParts {
 }
 
 export function parseUrl(url: string): UrlParts {
-   // 請在此處寫下你的程式碼
+  return {
+    protocol: url.split('//')[0],
+    hostname: url.split('//')[1].split('/')[0],
+    path: url.split('com')[1]
+  }
 }
